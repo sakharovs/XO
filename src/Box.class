@@ -1,0 +1,25 @@
+public class Box {
+        
+    double width;
+    double height;
+    double lenght;
+        
+    Box (double w, double h, double l){
+        this.width = w;
+        this.height = h;
+        this.lenght = l;
+    }
+    double volume(){
+        return width*height*lenght;
+    }
+    class BoxDemo {
+        public static void main (String args[]){
+            Box box1 = new Box (10,10,10);
+            Box box2 = new Box (10,10,20);
+            
+            double vol;
+            vol=box1.volume;
+            System.out.println(vol);
+        }
+    }
+}
